@@ -41,3 +41,31 @@ Once paired, the bot sends session confirmations and messages to your WhatsApp n
 ## 🔑 Pair Code Example
 
 When you run the bot, it will generate a pair code like this:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SOURAJIT-AI Bot Pairing</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #111; color: #eee; text-align: center; padding: 50px; }
+    h1 { font-size: 3em; color: #0f0; }
+    .code { font-size: 4em; margin: 20px; color: #f90; }
+    button { padding: 10px 20px; background: #0f0; border: none; color: #000; font-size: 1.2em; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h1>🔐 Pair with SOURAJIT-AI Bot</h1>
+  <p>Your secure device pair code:</p>
+  <div class="code" id="pairCode">87364522</div>
+  <button onclick="generateCode()">🔄 Refresh Code</button>
+
+  <script>
+    function generateCode() {
+      const code = Math.floor(10000000 + Math.random() * 90000000);
+      document.getElementById('pairCode').innerText = code;
+    }
+  </script>
+
+</body>
+</html>
